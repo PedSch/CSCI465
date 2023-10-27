@@ -1,0 +1,114 @@
+Pedros-MacBook-Pro:desktop pedroschmidt$ python3 cw2.py
+Please enter a filename : input.txt
+User Input :  input.txt
+Printing File and Error Checking 
+Dataframe : 
+                                   LEXEME                          SPELLING
+ID       program example(input,output);\n  program example(input,output);\n
+rel_op   program example(input,output);\n  program example(input,output);\n
+comment  program example(input,output);\n  program example(input,output);\n
+number   program example(input,output);\n  program example(input,output);\n
+<ID> program example(input,output);
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['program', 'example(input,output);']Dataframe : 
+                     LEXEME            SPELLING
+ID       var x,y:integer;\n  var x,y:integer;\n
+rel_op   var x,y:integer;\n  var x,y:integer;\n
+comment  var x,y:integer;\n  var x,y:integer;\n
+number   var x,y:integer;\n  var x,y:integer;\n
+<ID> var x,y:integer;
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['var', 'x,y:integer;']Dataframe : 
+                                       LEXEME                              SPELLING
+ID       function gcd(a,b:integer):integer;\n  function gcd(a,b:integer):integer;\n
+rel_op   function gcd(a,b:integer):integer;\n  function gcd(a,b:integer):integer;\n
+comment  function gcd(a,b:integer):integer;\n  function gcd(a,b:integer):integer;\n
+number   function gcd(a,b:integer):integer;\n  function gcd(a,b:integer):integer;\n
+<ID> function gcd(a,b:integer):integer;
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['function', 'gcd(a,b:integer):integer;']Dataframe : 
+               LEXEME      SPELLING
+ID       begin{gcd}\n  begin{gcd}\n
+rel_op   begin{gcd}\n  begin{gcd}\n
+comment  begin{gcd}\n  begin{gcd}\n
+number   begin{gcd}\n  begin{gcd}\n
+<ID> begin{gcd}
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['begin{gcd}']Dataframe : 
+                                            LEXEME                                   SPELLING
+ID       if b=0then gcd:=a else gcd:=(b,a mod b)\n  if b=0then gcd:=a else gcd:=(b,a mod b)\n
+rel_op   if b=0then gcd:=a else gcd:=(b,a mod b)\n  if b=0then gcd:=a else gcd:=(b,a mod b)\n
+comment  if b=0then gcd:=a else gcd:=(b,a mod b)\n  if b=0then gcd:=a else gcd:=(b,a mod b)\n
+number   if b=0then gcd:=a else gcd:=(b,a mod b)\n  if b=0then gcd:=a else gcd:=(b,a mod b)\n
+<ID> if b=0then gcd:=a else gcd:=(b,a mod b)
+
+!ERROR  rel_op!
+!ERROR  Comment!
+<number> if b=0then gcd:=a else gcd:=(b,a mod b)
+
+['if', 'b=0then', 'gcd:=a', 'else', 'gcd:=(b,a', 'mod', 'b)']Dataframe : 
+              LEXEME     SPELLING
+ID       end;{gcd}\n  end;{gcd}\n
+rel_op   end;{gcd}\n  end;{gcd}\n
+comment  end;{gcd}\n  end;{gcd}\n
+number   end;{gcd}\n  end;{gcd}\n
+<ID> end;{gcd}
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['end;{gcd}']Dataframe : 
+                   LEXEME          SPELLING
+ID       begin{example}\n  begin{example}\n
+rel_op   begin{example}\n  begin{example}\n
+comment  begin{example}\n  begin{example}\n
+number   begin{example}\n  begin{example}\n
+<ID> begin{example}
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['begin{example}']Dataframe : 
+               LEXEME      SPELLING
+ID       read(x,y);\n  read(x,y);\n
+rel_op   read(x,y);\n  read(x,y);\n
+comment  read(x,y);\n  read(x,y);\n
+number   read(x,y);\n  read(x,y);\n
+<ID> read(x,y);
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['read(x,y);']Dataframe : 
+                     LEXEME            SPELLING
+ID       write(gcd(x,y));\n  write(gcd(x,y));\n
+rel_op   write(gcd(x,y));\n  write(gcd(x,y));\n
+comment  write(gcd(x,y));\n  write(gcd(x,y));\n
+number   write(gcd(x,y));\n  write(gcd(x,y));\n
+<ID> write(gcd(x,y));
+
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
+['write(gcd(x,y));']Dataframe : 
+        LEXEME SPELLING
+ID        end.     end.
+rel_op    end.     end.
+comment   end.     end.
+number    end.     end.
+<ID> end.
+!ERROR  rel_op!
+!ERROR  Comment!
+!ERROR  Number!
